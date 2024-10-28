@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Instancias</h2>
+    <div>
+        <button onclick="start_ec2()">Iniciar instancia</button>
+        <button onclick="stop_ec2()">Detener instancia</button>
+    </div>
+</body>
+<style>
+    button {
+        background-color: coral;
+        color: white;
+        font-size: 40px;
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+
+    div {
+        margin-top: 5%;
+        text-align: center;
+    }
+</style>
+<script>
+    function start_ec2() {
+        window.location = "/default/start_admin_ec2"
+    }
+    function stop_ec2() {
+        window.location = "stop_admin_ec2"
+    }
+</script>
+</html>

@@ -10,7 +10,7 @@
 
     <h2>Registro de Actividades Laborales</h2>
 
-    <form id="activityForm" action="/register_activity" method="post">
+    <form id="activityForm" action="/register_activity" method="post" enctype="multipart/form-data">
         
         <label for="activityName">Nombre de la Actividad:</label>
         <input type="text" id="activityName" name="activityName" class="inputForm">
@@ -37,9 +37,11 @@
         <input type="text" id="platform" name="platform" class="inputForm">
 
         <button type="submit" class="register">Registrar</button>
-        <button type="button" class="consult">Consultar</button>
+        <button type="button" onclick="redirectToConsultation()" class="consult">Consultar</button>
+        <button type="button" onclick="redirectToIntance()" class="consult">Instancias</button>
+        <input type="file" name="uploadFile">
     </form>
 
-    <script src="static/css/activities.js"></script> 
+    <script src="../static/js/activities.js"></script> 
 </body>
 </html>

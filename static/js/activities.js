@@ -1,5 +1,9 @@
 function redirectToConsultation() {
-    window.location.href = "consult.html";
+    window.location = "/consult_page";
+}
+
+function redirectToIntance() {
+    window.location = "/instances_page";
 }
 
 
