@@ -76,3 +76,7 @@ textarea {
 button {
     justify-self: center;
 }
+
+body {
+    background-color: #90ee90;
+}
